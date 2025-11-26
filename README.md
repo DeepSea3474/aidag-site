@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 # AIDAG Spiral Chain Portal
-
 Bu repo, aidag.eth kimliğiyle zincir üstü tanıklık ve DAO yönetimi için resmi portaldır.  
 İçerikler:
 - index.html → Ana sayfa
