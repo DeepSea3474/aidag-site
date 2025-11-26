@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><title>DAO • Aidag-Chain</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <title>DAO • Aidag-Chain</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
 <header class="nav">
-  <div class="brand"><img src="assets/aidag-shield-robot.svg" alt="Aidag Shield" /><span>Aidag-Chain</span></div>
+  <div class="brand">
+    <img src="assets/aidag-shield-robot.svg" alt="Aidag Shield Logo">
+    <span>Aidag-Chain</span>
+  </div>
   <nav>
     <a href="index.html">Home</a>
     <a href="presale.html">Presale</a>
@@ -19,32 +24,23 @@
 
 <section class="page">
   <h1>DAO</h1>
-  <div class="dao-votes">
-    <h3>Active votes</h3>
-    <ul id="voteList">
-      <li>Liquidity split 60% Team / 40% DAO — Witnessed by AI</li>
-    </ul>
-    <a class="btn btn-secondary" href="#" target="_blank">Open Snapshot</a>
+  <div class="card">
+    <h3>Community Governance</h3>
+    <p>All proposals are witnessed and sealed on-chain by SoulwareAI.</p>
+  </div>
+  <div class="card">
+    <h3>Voting Power</h3>
+    <p>Token holders decide transparently through spiral DAO votes.</p>
+  </div>
+  <div class="card">
+    <h3>Development Fund</h3>
+    <p>40% of presale proceeds remain in the DAO wallet for community-driven growth.</p>
   </div>
 </section>
 
-<footer class="footer"><p>© 2025 Aidag-Chain • Quantum Secured by Aidag Shield</p></footer>
-
-<script>
-const voteList = document.getElementById('voteList');
-const sampleVotes = [
-  "Enable Mining after 1000 members — Witnessed by AI",
-  "Approve Presale Pricing — Witnessed by AI",
-  "Add CEX liquidity tranche — Witnessed by AI"
-];
-let i = 0;
-setInterval(() => {
-  const li = document.createElement('li');
-  li.textContent = sampleVotes[i % sampleVotes.length];
-  voteList.insertBefore(li, voteList.firstChild);
-  if (voteList.children.length > 5) voteList.removeChild(voteList.lastChild);
-  i++;
-}, 6000);
-</script>
+<footer class="footer">
+  <p>&copy; 2025 Aidag-Chain. All rights reserved.</p>
+</footer>
 </body>
 </html>
+
