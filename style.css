@@ -1,3 +1,160 @@
+          HEAD
+/* Mobil uyum için genel düzenleme */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+    margin: 0;
+  }
+
+  header.nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 18px;
+    padding: 8px;
+    text-decoration: none;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+
+/* Aidag-Chain Styles */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f1a;
+  color: #f0f0f0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1a1a2e;
+  padding: 10px 20px;
+}
+
+.nav .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  color: #FFD700;
+}
+
+.nav nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #f0f0f0;
+}
+
+.nav nav a:hover {
+  color: #FFD700;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #1a1a2e, #0f0f1a);
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  color: #FFD700;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background: #FFD700;
+  color: #0f0f1a;
+}
+
+.btn-secondary {
+  background: #1E90FF;
+  color: #fff;
+}
+
+.page {
+  padding: 40px 20px;
+}
+
+.card {
+  background: #1a1a2e;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #1a1a2e;
+/* Genel site düzeni */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+header.nav .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header.nav nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+header.nav nav a:hover {
+  text-decoration: underline;
+}
+
 /* Mobil uyum için genel düzenleme */
 @media (max-width: 768px) {
   body {
@@ -38,4 +195,4 @@
   }
 
   img {
-
+    max-width: 100%;

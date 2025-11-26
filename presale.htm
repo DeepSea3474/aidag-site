@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><title>Presale • Aidag-Chain</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<header class="nav">
+  <div class="brand"><img src="assets/aidag-shield-robot.svg" alt="Aidag Shield" /><span>Aidag-Chain</span></div>
+  <nav>
+    <a href="index.html">Home</a><a href="presale.html">Presale</a><a href="dao.html">DAO</a>
+    <a href="modules.html">Modules</a><a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="page">
+  <h1>Presale</h1>
+  <div class="countdown"><h3>Web Presale Stage 1 Ends In:</h3><div id="timer1"></div></div>
+  <div class="countdown"><h3>Web Presale Stage 2 Ends In:</h3><div id="timer2"></div></div>
+  <div class="countdown"><h3>PinkSale Presale Ends In:</h3><div id="timer3"></div></div>
+
+  <div class="chart-wrap">
+    <h3>Allocation (AIDAG)</h3>
+    <canvas id="presalePie"></canvas>
+  </div>
+  <div class="chart-wrap">
+    <h3>Revenue contribution (USD)</h3>
+    <canvas id="presaleBar"></canvas>
+  </div>
+
+  <div class="chart-wrap">
+    <h3>Pricing & Links</h3>
+    <ul>
+      <li><strong>Web Stage 1:</strong> 3,000,000 AIDAG @ $0.25 → $750,000</li>
+      <li><strong>Web Stage 2:</strong> 3,000,000 AIDAG @ $0.30 → $900,000</li>
+      <li><strong>PinkSale:</strong> 3,999,000 AIDAG @ $0.13 → ~$520,000</li>
+    </ul>
+    <button disabled class="btn">PinkSale Launchpad (Coming Soon)</button>
+  </div>
+</section>
+
+<footer class="footer"><p>© 2025 Aidag-Chain • Quantum Secured by Aidag Shield</p></footer>
+
+<script src="app.js"></script>
+<script>
+// Set your real ISO dates
+countdown('2026-01-05T18:00:00Z','timer1',() => alert('Stage 1 completed.'));
+countdown('2026-01-12T18:00:00Z','timer2',() => alert('Stage 2 completed.'));
+countdown('2026-01-20T18:00:00Z','timer3',() => alert('PinkSale completed.'));
+
+const pieCtx = document.getElementById('presalePie').getContext('2d');
+new Chart(pieCtx, {
+  type: 'pie',
+  data: {
+    labels: ['Web Stage 1','Web Stage 2','PinkSale'],
+    datasets: [{ data: [3000000, 3000000, 3999000], backgroundColor: ['#6A0DAD','#1E90FF','#FFD700'] }]
+  }
+});
+const barCtx = document.getElementById('presaleBar').getContext('2d');
+new Chart(barCtx, {
+  type: 'bar',
+  data: {
+    labels: ['Web Stage 1','Web Stage 2','PinkSale'],
+    datasets: [{ label: 'Revenue (USD)', data: [750000, 900000, 520000], backgroundColor: ['#6A0DAD','#1E90FF','#FFD700'] }]
+  },
+  options: { scales: { y: { beginAtZero: true } } }
+});
+</script>
+</body>
+</html>
+
+
