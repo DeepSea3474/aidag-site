@@ -12,6 +12,5 @@
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "web3": "^4.1.2"
-    // Eğer Web3 kodunuzda başka bir kütüphane kullanıyorsanız (örneğin ethers), onu buraya ekleyin.
   }
 }
