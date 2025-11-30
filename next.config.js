@@ -1,12 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Pages dağıtımı için statik HTML çıktısını zorlar
-  output: 'export', 
-
-  // Node.js uyumluluğunu aktif eder, bu, Web3 kodunuz için kritiktir.
-  experimental: {
-      runtime: 'nodejs'
-  },
+  // Cloudflare Pages gibi statik barındırma ortamları için KRİTİK ayar.
+  // Bu, Next.js'e tamamen statik HTML ve CSS dosyaları üretmesini söyler.
+  output: 'export',
+  
+  // Önceki hataya neden olan 'experimental: { runtime: 'nodejs' }' bloğu kaldırıldı.
 };
 
 module.exports = nextConfig;
