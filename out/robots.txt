@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://aidag-chain.com
+
+# Sitemaps
+Sitemap: https://aidag-chain.com/sitemap.xml
