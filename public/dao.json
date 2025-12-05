@@ -4,6 +4,5 @@
   "proposal_model": "ritual-based consensus",
   "voting_mechanism": "affirmation quorum",
   "treasury_visibility": "mythic",
-  "status": "ready",
-  "timestamp": "2025-10-21T01:00:46Z"
+  "status": "ready"
 }
