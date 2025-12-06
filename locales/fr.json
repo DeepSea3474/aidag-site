@@ -1,0 +1,55 @@
+{
+  "common": {
+    "connect": "Panneau / Connecter",
+    "visit_dao": "Visiter la Plateforme DAO",
+    "review_tokenomics": "Revoir la Tokenomique",
+    "max_supply": "Max. Offre:",
+    "address_copied": "Adresse copiée!"
+  },
+  "nav": {
+    "dao_platform": "Plateforme DAO",
+    "tokenomics": "Tokenomique",
+    "transparency": "Transparence",
+    "ai_mgmt": "Soulware AI"
+  },
+  "hero": {
+    "title": "Structure Financière Autonome: AIDAG AI DAO",
+    "warning": "⚠️ AUCUNE AUTORITÉ DU FONDATEUR: Tous les pouvoirs, y compris ceux du fondateur, ont été définitivement abandonnés via un contrat intelligent.",
+    "description": "AIDAG est un jeton de gouvernance décentralisé entièrement autonome et transparent, produit et maintenu par Soulware AI."
+  },
+  "tokenomics": {
+    "title": "Tokenomique: Distribution Transparente et Stable",
+    "dao_wallet_title": "Adresse du Portefeuille Trésorerie DAO",
+    "dao_wallet_desc": "Les fonds de ce portefeuille ne peuvent être déplacés que par des votes DAO réussis.",
+    "fund_use_dao": "Portefeuille Trésorerie DAO (30.0%)",
+    "fund_use_dao_desc": "Utilisé pour les décisions DAO, les subventions et la croissance de l'écosystème. Gère également la distribution des jetons de prévente. Adresse: ",
+    "fund_use_presale": "Prévente & Offre Publique (25.0%)",
+    "fund_use_presale_desc": "L'allocation principale pour les premiers investisseurs. La distribution est gérée automatiquement par Soulware AI à partir du portefeuille DAO.",
+    "fund_use_founder": "Allocation du Fondateur (14.3% - 1 An Bloqué)",
+    "fund_use_founder_desc": "Montant bloqué démontrant l'engagement à long terme de l'équipe.",
+    "fund_use_liquidity": "Liquidité CEX / DEX (15.0%)",
+    "fund_use_liquidity_desc": "Alloué aux pools pour assurer la stabilité du marché et une profondeur de négociation suffisante.",
+    "fund_use_community": "Communauté & Bonus (10.7%)",
+    "fund_use_community_desc": "Pour les Airdrops, le marketing et les bonus pour les premiers adoptants.",
+    "fund_use_partnership": "Partenariat Stratégique (5.0%)",
+    "fund_use_partnership_desc": "Pour les partenariats d'entreprise et l'expansion de l'écosystème."
+  },
+  "contract": {
+    "title": "Transparence du Contrat Intelligent",
+    "description": "AIDAG est construit sur un contrat intelligent audité avec l'autorité du fondateur révoquée de manière permanente. Vérifiez toutes les transactions en chaîne.",
+    "address_title": "Adresse du Contrat AIDAG (Compatible EVM)",
+    "address_note": "*Vérifiez l'adresse directement sur n'importe quel Explorateur de Bloc."
+  },
+  "ai_mgmt": {
+    "title": "Soulware AI: Gouvernance Autonome et Sans Confiance",
+    "card_production_title": "Production et Développement AI",
+    "card_production_desc": "Soulware AI est la seule autorité pour la production en chaîne et le développement futur du projet, garantissant une véritable décentralisation.",
+    "card_presale_title": "Automatisation de la Prévente",
+    "card_presale_desc": "Distribution de jetons automatisée et sans erreur depuis la Trésorerie DAO via le mécanisme en chaîne de l'IA.",
+    "card_social_title": "Gestion des Médias Sociaux",
+    "card_social_desc": "Publication et gestion automatisées, dynamiques, axées sur le contenu et basées sur les données sur Telegram, X et Instagram."
+  },
+  "footer": {
+    "copyright": "© 2025 AIDAG Spiral. Tous droits réservés. | Géré par Soulware AI."
+  }
+}

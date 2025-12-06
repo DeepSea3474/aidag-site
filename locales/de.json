@@ -1,0 +1,55 @@
+{
+  "common": {
+    "connect": "Panel / Verbinden",
+    "visit_dao": "DAO Plattform Besuchen",
+    "review_tokenomics": "Tokenomics Überprüfen",
+    "max_supply": "Maximaler Vorrat:",
+    "address_copied": "Adresse kopiert!"
+  },
+  "nav": {
+    "dao_platform": "DAO Plattform",
+    "tokenomics": "Tokenomics",
+    "transparency": "Transparenz",
+    "ai_mgmt": "Soulware AI"
+  },
+  "hero": {
+    "title": "Autonome Finanzstruktur: AIDAG AI DAO",
+    "warning": "⚠️ KEINE GRÜNDERAUTORITÄT: Alle Befugnisse, einschließlich der des Gründers, wurden durch Smart Contract dauerhaft aufgegeben.",
+    "description": "AIDAG ist ein vollständig autonomer und transparenter dezentraler Governance-Token, der von Soulware AI produziert und verwaltet wird."
+  },
+  "tokenomics": {
+    "title": "Tokenomics: Transparente und Stabile Verteilung",
+    "dao_wallet_title": "DAO Schatzkammer-Wallet-Adresse",
+    "dao_wallet_desc": "Gelder in dieser Wallet können nur durch erfolgreiche DAO-Abstimmungen bewegt werden.",
+    "fund_use_dao": "DAO Schatzkammer-Wallet (30.0%)",
+    "fund_use_dao_desc": "Wird für DAO-Entscheidungen, Zuschüsse und Ökosystemwachstum verwendet. Verwaltet auch die Vorverkaufs-Token-Verteilung. Adresse: ",
+    "fund_use_presale": "Vorverkauf & Öffentliches Angebot (25.0%)",
+    "fund_use_presale_desc": "Die Hauptzuteilung für frühe Investoren. Die Verteilung wird automatisch von Soulware AI aus der DAO-Wallet vorgenommen.",
+    "fund_use_founder": "Gründerzuteilung (14.3% - 1 Jahr Gesperrt)",
+    "fund_use_founder_desc": "Gesperrter Betrag, der das langfristige Engagement des Teams zeigt.",
+    "fund_use_liquidity": "CEX / DEX Liquidität (15.0%)",
+    "fund_use_liquidity_desc": "Wird Pools zugewiesen, um Marktstabilität und ausreichende Handelstiefe zu gewährleisten.",
+    "fund_use_community": "Community & Boni (10.7%)",
+    "fund_use_community_desc": "Für Airdrops, Marketing und Boni für frühe Adoptierende.",
+    "fund_use_partnership": "Strategische Partnerschaft (5.0%)",
+    "fund_use_partnership_desc": "Für Unternehmenspartnerschaften und Ökosystemerweiterung."
+  },
+  "contract": {
+    "title": "Smart Contract Transparenz",
+    "description": "AIDAG basiert auf einem geprüften Smart Contract, bei dem die Gründerautorität dauerhaft widerrufen wurde. Überprüfen Sie alle Transaktionen on-chain.",
+    "address_title": "AIDAG Vertragsadresse (EVM Kompatibel)",
+    "address_note": "*Überprüfen Sie die Adresse direkt auf einem beliebigen Block-Explorer."
+  },
+  "ai_mgmt": {
+    "title": "Soulware AI: Autonome und Vertrauenswürdige Governance",
+    "card_production_title": "AI Produktion & Entwicklung",
+    "card_production_desc": "Soulware AI ist die einzige Autorität für die On-Chain-Produktion und zukünftige Entwicklung des Projekts, wodurch echte Dezentralisierung gewährleistet wird.",
+    "card_presale_title": "Vorverkaufs-Automatisierung",
+    "card_presale_desc": "Automatisierte und fehlerfreie Token-Verteilung aus der DAO Schatzkammer über den On-Chain-Mechanismus der KI.",
+    "card_social_title": "Social Media Management",
+    "card_social_desc": "Dynamisches, inhaltsgesteuertes und datenbasiertes automatisiertes Posten und Management über Telegram, X und Instagram."
+  },
+  "footer": {
+    "copyright": "© 2025 AIDAG Spiral. Alle Rechte vorbehalten. | Verwaltet von Soulware AI."
+  }
+}
