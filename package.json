@@ -5,7 +5,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "next": "^15.5.7",
