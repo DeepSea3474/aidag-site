@@ -7,14 +7,14 @@ import { ethers } from "ethers";
 const CONTRACT_ADDRESS = "0xe6B06f7C63F6AC84729007ae8910010F6E721041";
 const CONTRACT_ABI = [
   {
-    "type": "function",
-    "name": "buyToken",
-    "stateMutability": "payable",
-    "inputs": [
-      { "name": "to", "type": "address" },
-      { "name": "amount", "type": "uint256" }
+    type: "function",
+    name: "buyToken",
+    stateMutability: "payable",
+    inputs: [
+      { name: "to", type: "address" },
+      { name: "amount", type: "uint256" }
     ],
-    "outputs": []
+    outputs: []
   }
 ];
 
@@ -23,14 +23,15 @@ export default function BuyPage() {
   const [status, setStatus] = useState<string>("");
 
   async function connectWallet() {
-    if (typeof window !== "undefined" && (window as any).ethereum) {
+    if (typeof window !== "undefined" && (window as unknown as { ethereum?: unknown }).ethereum) {
       try {
-        const ethereum = (window as any).ethereum;
-        const accounts = await ethereum.request({ method: "eth_requestAccounts" });
+        const ethereum = (window as unknown as { ethereum: any }).ethereum;
+        const accounts: string[] = await ethereum.request({ method: "eth_requestAccounts" });
         setAccount(accounts[0]);
         setStatus("Wallet connected");
-      } catch (err: any) {
-        setStatus(err?.message || "Wallet connection failed");
+      } catch (err: unknown) {
+        const error = err as Error;
+        setStatus(error.message || "Wallet connection failed");
       }
     } else {
       setStatus("MetaMask yüklü değil. Lütfen tarayıcınıza ekleyin.");
@@ -44,12 +45,11 @@ export default function BuyPage() {
         return;
       }
 
-      const ethereum = (window as any).ethereum;
+      const ethereum = (window as unknown as { ethereum: any }).ethereum;
       const provider = new ethers.BrowserProvider(ethereum);
       const signer = await provider.getSigner();
       const contract = new ethers.Contract(CONTRACT_ADDRESS, CONTRACT_ABI, signer);
 
-      // Örnek: 100 token almak için 0.1 ETH gönderiyoruz
       const tx = await contract.buyToken(account, ethers.parseUnits("100", 18), {
         value: ethers.parseEther("0.1")
       });
@@ -57,8 +57,9 @@ export default function BuyPage() {
       setStatus("İşlem gönderildi, bekleniyor...");
       await tx.wait();
       setStatus(`İşlem tamamlandı: ${tx.hash}`);
-    } catch (err: any) {
-      setStatus(err?.message || "İşlem başarısız");
+    } catch (err: unknown) {
+      const error = err as Error;
+      setStatus(error.message || "İşlem başarısız");
     }
   }
 
