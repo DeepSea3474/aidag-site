@@ -2,9 +2,7 @@
 
 import { useState } from "react";
 import dynamic from "next/dynamic";
-
-// ethers'i client-side import et
-const { ethers } = require("ethers");
+import { ethers } from "ethers";
 
 const CONTRACT_ADDRESS = "0xe6B06f7C63F6AC84729007ae8910010F6E721041";
 const CONTRACT_ABI = [
@@ -69,5 +67,5 @@ function BuyPage() {
   );
 }
 
-// Dinamik export → SSR sırasında yüklenmez
+// SSR sırasında yüklenmesin → sadece client tarafında render
 export default dynamic(() => Promise.resolve(BuyPage), { ssr: false });
