@@ -3,7 +3,7 @@
 import { useWriteContract } from "wagmi";
 import abi from "./abi.json"; // kendi ABI dosyanı buraya koy
 
-export function BuyTokenButton() {
+export default function BuyTokenButton() {
   const { writeContract } = useWriteContract();
 
   const handleBuy = async () => {
