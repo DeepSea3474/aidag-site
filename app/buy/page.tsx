@@ -1,7 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { ethers } from "ethers";
+import dynamic from "next/dynamic";
+
+// ethers'i client-side import et
+const { ethers } = require("ethers");
 
 const CONTRACT_ADDRESS = "0xe6B06f7C63F6AC84729007ae8910010F6E721041";
 const CONTRACT_ABI = [
@@ -17,7 +20,7 @@ const CONTRACT_ABI = [
   }
 ];
 
-export default function BuyPage() {
+function BuyPage() {
   const [amount, setAmount] = useState("");
   const [status, setStatus] = useState("");
 
@@ -65,3 +68,6 @@ export default function BuyPage() {
     </div>
   );
 }
+
+// Dinamik export → SSR sırasında yüklenmez
+export default dynamic(() => Promise.resolve(BuyPage), { ssr: false });
