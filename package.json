@@ -7,6 +7,7 @@
     "deploy": "next build"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.90.12",
     "@wagmi/core": "^1.4.7",
     "@web3modal/ethereum": "^2.7.1",
     "@web3modal/react": "^2.7.1",
