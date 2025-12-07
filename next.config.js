@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // i18n bloğunu sildik.
-  reactStrictMode: true, 
+  compress: true,
+  swcMinify: true,
 };
 
 module.exports = nextConfig;
-
