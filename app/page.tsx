@@ -1,9 +1,10 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
-    <main>
+    <div>
       <h1>Welcome to Aidag Chain</h1>
-      <p>Official domain: www.aidag-chain.com</p>
-    </main>
+      <Image src="/logo.png" width={200} height={200} alt="Logo" />
+    </div>
   );
 }
-

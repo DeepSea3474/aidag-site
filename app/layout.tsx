@@ -1,14 +1,21 @@
 import "./globals.css";
-export const metadata = {
-  title: "Aidag Site",
-  description: "Official Aidag Chain website",
+import type { Metadata } from "next";
+import { Providers } from "./providers";
+
+export const metadata: Metadata = {
+  title: "Aidag Chain",
+  description: "Buy and manage Aidag tokens"
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body>
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
