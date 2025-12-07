@@ -67,5 +67,5 @@ function BuyPage() {
   );
 }
 
-// SSR tamamen kapatıldı
+// SSR tamamen kapatıldı → sadece client tarafında render
 export default dynamic(() => Promise.resolve(BuyPage), { ssr: false });
