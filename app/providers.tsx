@@ -1,15 +1,18 @@
 "use client";
 
-import { WagmiConfig, createConfig } from "wagmi";
+import { WagmiConfig, createConfig, configureChains } from "wagmi";
 import { mainnet } from "wagmi/chains";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { publicProvider } from "wagmi/providers/public";
+
+const { chains, publicClient } = configureChains(
+  [mainnet],
+  [publicProvider()]
+);
 
 const config = createConfig({
-  transports: {
-    [mainnet.id]: {
-      http: "https://mainnet.infura.io/v3/YOUR_INFURA_KEY", // kendi RPC/Infura URL’in
-    },
-  },
+  autoConnect: true,
+  publicClient,
 });
 
 const queryClient = new QueryClient();
