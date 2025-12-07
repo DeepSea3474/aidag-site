@@ -8,7 +8,7 @@ const config = createConfig({
   chains: [mainnet],
   transports: {
     [mainnet.id]: {
-      http: "https://mainnet.infura.io/v3/YOUR_INFURA_KEY" // kendi RPC/Infura URL’in
+      http: "https://mainnet.infura.io/v3/YOUR_INFURA_KEY"
     }
   }
 });
@@ -24,4 +24,3 @@ export function Providers({ children }: { children: React.ReactNode }) {
     </WagmiProvider>
   );
 }
-

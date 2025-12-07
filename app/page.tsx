@@ -1,9 +1,17 @@
-export default function NotFound() {
+"use client";
+
+import Link from "next/link";
+
+export default function HomePage() {
   return (
-    <main style={{ padding: "2rem", fontFamily: "sans-serif", textAlign: "center" }}>
-      <h1>404 - Page Not Found</h1>
-      <p>Oops! The page you are looking for does not exist.</p>
-      <a href="/">Go back to Home</a>
+    <main>
+      <h1>Welcome to Aidag Chain</h1>
+      <p>
+        Go to <Link href="/buy">Buy Page</Link>
+      </p>
+      <p>
+        See <Link href="/info">Info Page</Link>
+      </p>
     </main>
   );
 }
