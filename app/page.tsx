@@ -1,6 +1,6 @@
 "use client";
 
-import dynamic from "next/dynamic";
+import dyn from "next/dynamic";
 
 // Bu satır sayfanın prerender edilmesini engeller
 export const dynamic = "force-dynamic";
@@ -15,5 +15,5 @@ function HomePage() {
   );
 }
 
-export default dynamic(() => Promise.resolve(HomePage), { ssr: false });
-
+// SSR tamamen kapatıldı → sadece client tarafında render
+export default dyn(() => Promise.resolve(HomePage), { ssr: false });
