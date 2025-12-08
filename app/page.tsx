@@ -2,6 +2,9 @@
 
 import dynamic from "next/dynamic";
 
+// Bu satır sayfanın prerender edilmesini engeller
+export const dynamic = "force-dynamic";
+
 function HomePage() {
   return (
     <div style={{ padding: "2rem" }}>
@@ -12,6 +15,5 @@ function HomePage() {
   );
 }
 
-// SSR tamamen kapatıldı → sadece client tarafında render
 export default dynamic(() => Promise.resolve(HomePage), { ssr: false });
 
