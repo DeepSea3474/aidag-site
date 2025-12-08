@@ -18,3 +18,8 @@ yarn-error.log*
 # Next.js build output
 .next/
 node_modules/
+
+# Node build artifacts
+keccak@3.0.4
+node-gyp-build
+
