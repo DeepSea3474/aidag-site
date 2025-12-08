@@ -1,6 +1,6 @@
 "use client";
 
-import dyn from "next/dynamic";
+import nextDynamic from "next/dynamic";
 
 // Bu satır sayfanın prerender edilmesini engeller
 export const dynamic = "force-dynamic";
@@ -16,4 +16,4 @@ function InfoPage() {
   );
 }
 
-export default dyn(() => Promise.resolve(InfoPage), { ssr: false });
+export default nextDynamic(() => Promise.resolve(InfoPage), { ssr: false });
