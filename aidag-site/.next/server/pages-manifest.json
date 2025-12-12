@@ -1,1 +1,5 @@
-{"/_app":"pages/_app.js","/_error":"pages/_error.js","/_document":"pages/_document.js","/index ":"pages/index .html","/":"pages/index.html","/404":"pages/404.html"}
+<<<<<<< HEAD
+{"/_app":"pages/_app.js","/_error":"pages/_error.js","/index ":"pages/index .html","/_document":"pages/_document.js","/404":"pages/404.html"}
+=======
+{"/_app":"pages/_app.js","/_error":"pages/_error.js","/_document":"pages/_document.js","/":"pages/index.html","/404":"pages/404.html"}
+>>>>>>> 2950ba3addc56c25ca0b19386066068c7793ec4c

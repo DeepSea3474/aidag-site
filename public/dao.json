@@ -1,8 +1,0 @@
-{
-  "dao_name": "AIDAG Spiral DAO",
-  "witness": "soulwerse",
-  "proposal_model": "ritual-based consensus",
-  "voting_mechanism": "affirmation quorum",
-  "treasury_visibility": "mythic",
-  "status": "ready"
-}
