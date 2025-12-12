@@ -3,33 +3,35 @@
 'use client'; 
 
 import * as React from 'react';
-import { WagmiConfig, createConfig, mainnet } from 'wagmi';
-import { http } from 'wagmi/connectors'; // <-- Hata veren 'http' artık buradan geliyor
-import { injected } from 'wagmi/connectors'; // Opsiyonel, genellikle Metamask için kullanılır
+// Artık 'http' veya 'injected' i Wagmi'den çağırmıyoruz
+import { WagmiConfig, createConfig, mainnet } from 'wagmi'; 
+import { http, createPublicClient, createClient } from 'viem'; // viem'den gerekli öğeleri çağırıyoruz
 
-// 1. Kullanmak istediğiniz ağları (chains) tanımlayın
+// 1. Ağları Tanımlayın
+// Not: mainnet (Ethereum) zaten Wagmi'den geliyor.
+
+// 2. Transport ayarını viem'den gelen http() ile yapın
+const publicClient = createPublicClient({
+  chain: mainnet,
+  transport: http(),
+});
+
+// 3. Wagmi Config'i Oluşturun (artık sadece publicClient kullanacağız)
 const config = createConfig({
-  // Tüm bağlantıların otomatik olarak denemesini sağlar.
-  autoConnect: true, 
-  
-  // Ana ağları ve transport (RPC) ayarlarını tanımlıyoruz.
-  chains: [mainnet], 
-  transports: {
-    // Ethereum Mainnet için varsayılan HTTP bağlantısını kullanıyoruz.
-    [mainnet.id]: http(), 
-  },
-  
-  // Eğer cüzdan bağlantılarını (Metamask, WalletConnect vb.) desteklemek istiyorsanız:
-  connectors: [
-    injected(),
-    // Eğer WalletConnect kullanacaksanız buraya ekleyin: 
-    // walletConnect({ projectId: 'YOUR_WALLETCONNECT_PROJECT_ID' }), 
-  ],
+  autoConnect: true,
+  publicClient, // viem'den gelen publicClient'ı kullanın
+
+  // viem'de connectors kullanımı biraz değişti, 
+  // ancak Next.js ve Web3Modal için genellikle sadece 
+  // publicClient yeterli olur.
+  // DİKKAT: Eğer Wagmi 1.x kullanıyorsanız aşağıdaki satırları eklemeniz gerekebilir:
+  // connectors: [
+  //   new InjectedConnector({ chains: [mainnet] }),
+  // ],
 });
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
-    // Uygulamanın Web3 bağlamını sağlar
     <WagmiConfig config={config}>
       {children}
     </WagmiConfig>
