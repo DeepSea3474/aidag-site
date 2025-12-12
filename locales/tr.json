@@ -1,0 +1,79 @@
+{
+  "common": {
+    "connect": "Panel / Bağlan",
+    "visit_dao": "DAO Platformunu Ziyaret Et",
+    "review_tokenomics": "Tokenomiyi İncele",
+    "max_supply": "Maksimum Arz:",
+    "address_copied": "Adres Kopyalandı!"
+  },
+  "nav": {
+    "dao_platform": "DAO Platformu",
+    "tokenomics": "Tokenomi",
+    "transparency": "Şeffaflık",
+    "ai_mgmt": "Soulware AI"
+  },
+  "hero": {
+    "title": "Otonom Finansal Yapı: AIDAG AI DAO",
+    "warning": "⚠️ KURUCU YETKİSİ YOK: Kurucu yetkisi de dahil olmak üzere tüm yetkiler, akıllı sözleşme aracılığıyla kalıcı olarak feragat edilmiştir.",
+    "description": "AIDAG, Soulware AI tarafından üretilen ve sürdürülen, tamamen otonom, şeffaf ve merkeziyetsiz bir yönetim tokenidir."
+  },
+  "tokenomics": {
+    "title": "Tokenomi: Şeffaf ve İstikrarlı Dağıtım",
+    "dao_wallet_title": "DAO Hazine Cüzdanı Adresi",
+    "dao_wallet_desc": "Bu cüzdandaki fonlar yalnızca başarılı DAO oylamalarıyla hareket ettirilebilir.",
+    "fund_use_dao": "DAO Hazine Cüzdanı (%30.0)",
+    "fund_use_dao_desc": "DAO kararları, hibeler ve ekosistem büyümesi için kullanılır. Ayrıca ön satış token dağıtımını yönetir. Adres: ",
+    "fund_use_presale": "Ön Satış ve Halka Arz (%25.0)",
+    "fund_use_presale_desc": "Erken yatırımcılar için ana tahsis. Dağıtım, DAO cüzdanından Soulware AI tarafından otomatik olarak gerçekleştirilir.",
+    "fund_use_founder": "Kurucu Tahsisi (%14.3 - 1 Yıl Kilitli)",
+    "fund_use_founder_desc": "Ekibin uzun vadeli taahhüdünü gösteren kilitli miktar.",
+    "fund_use_liquidity": "CEX / DEX Likiditesi (%15.0)",
+    "fund_use_liquidity_desc": "Piyasa istikrarını ve yeterli işlem derinliğini sağlamak için havuzlara tahsis edilmiştir.",
+    "fund_use_community": "Topluluk ve Bonuslar (%10.7)",
+    "fund_use_community_desc": "Airdrop'lar, pazarlama ve erken benimseyen bonusları için.",
+    "fund_use_partnership": "Stratejik Ortaklık (%5.0)",
+    "fund_use_partnership_desc": "Kurumsal ortaklıklar ve ekosistem genişlemesi için."
+  },
+  "contract": {
+    "title": "Akıllı Sözleşme Şeffaflığı",
+    "description": "AIDAG, kurucu yetkisinin kalıcı olarak feragat edildiği denetlenmiş bir akıllı sözleşme üzerine kurulmuştur. Tüm işlemleri zincir üzerinde doğrulayın.",
+    "address_title": "AIDAG Sözleşme Adresi (EVM Uyumlu)",
+    "address_note": "*Adresi herhangi bir Blok Gezgini üzerinde doğrudan doğrulayın."
+  },
+  "ai_mgmt": {
+    "title": "Soulware AI: Otonom, Güvene Dayalı Olmayan Yönetim",
+    "card_production_title": "AI Üretimi ve Geliştirilmesi",
+    "card_production_desc": "Soulware AI, zincir üstü üretim ve projenin gelecekteki gelişimi için tek yetkilidir ve gerçek merkeziyetsizliği sağlar.",
+    "card_presale_title": "Ön Satış Otomasyonu",
+    "card_presale_desc": "DAO Hazinesi'nden AI'nın zincir üstü mekanizması aracılığıyla tokenlerin otomatik ve hatasız dağıtımı.",
+    "card_social_title": "Sosyal Medya Yönetimi",
+    "card_social_desc": "Telegram, X ve Instagram genelinde dinamik, içerik odaklı ve verilere dayalı otomatik gönderim ve yönetim."
+  },
+  "chatbot_messages": {
+    "welcome": "AIDAG Soulware AI Asistanı'na hoş geldiniz! Tokenomi, Ön Satış veya Akıllı Sözleşme hakkında bir sorunuz var mı?",
+    "btn_tokenomics": "Tokenomi",
+    "btn_contract": "Akıllı Sözleşme",
+    "btn_presale": "Ön Satış",
+    "placeholder": "Sorunuzu buraya yazın..."
+  },
+  "new_sections": {
+    "title": "Vizyon ve Anlık Satış Bilgisi",
+    "vision_title": "AIDAG Spiral Chain Vizyonu",
+    "vision_desc": "Hedefimiz, yapay zeka güdümlü finansal uygulamalar ve otonom DAO operasyonları için optimize edilmiş, yüksek hızlı, ölçeklenebilir bir Katman 1 blok zinciri inşa etmektir.",
+    "vision_list_1": "Yapay Zeka Optimize Edilmiş Mutabakat Mekanizması",
+    "vision_list_2": "Sorunsuz DAO Birlikte Çalışabilirliği",
+    "vision_list_3": "Mikro İşlemler İçin Yüksek Verim",
+    "sale_title": "Anlık Ön Satış ve Fiyat Bilgisi",
+    "sale_collected_usd": "Toplanan Toplam Miktar (USD)",
+    "sale_progress_tokens": "Satılan Token / Hedef",
+    "sale_current_price": "Mevcut Fiyat",
+    "sale_stage": "Ön Satış Aşaması",
+    "sale_stage_value": "Aşama 2 (Son)",
+    "sale_progress": "Hedefe Yönelik İlerleme",
+    "sale_target": "Hedef:",
+    "sale_cta": "Hemen Ön Satışa Katılın"
+  },
+  "footer": {
+    "copyright": "© 2025 AIDAG Spiral. Tüm Hakları Saklıdır. | Soulware AI Tarafından Yönetilmektedir."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "common": {
+    "connect": "面板 / 连接",
+    "visit_dao": "访问 DAO 平台",
+    "review_tokenomics": "查看代币经济学",
+    "max_supply": "最大供应量:",
+    "address_copied": "地址已复制！"
+  },
+  "nav": {
+    "dao_platform": "DAO 平台",
+    "tokenomics": "代币经济学",
+    "transparency": "透明度",
+    "ai_mgmt": "Soulware AI"
+  },
+  "hero": {
+    "title": "自治金融结构: AIDAG AI DAO",
+    "warning": "⚠️ 无创始人权限: 包括创始人在内的所有权力已通过智能合约永久放弃。",
+    "description": "AIDAG 是一个完全自治、透明的去中心化治理代币，由 Soulware AI 生产和维护。"
+  },
+  "tokenomics": {
+    "title": "代币经济学: 透明稳定的分配",
+    "dao_wallet_title": "DAO 财政钱包地址",
+    "dao_wallet_desc": "此钱包中的资金只能通过成功的 DAO 投票移动。",
+    "fund_use_dao": "DAO 财政钱包 (30.0%)",
+    "fund_use_dao_desc": "用于 DAO 决策、拨款和生态系统增长。也管理预售代币分配。地址: ",
+    "fund_use_presale": "预售和公开发行 (25.0%)",
+    "fund_use_presale_desc": "早期投资者的主要分配。分配由 Soulware AI 通过 DAO 钱包自动处理。",
+    "fund_use_founder": "创始人分配 (14.3% - 锁定 1 年)",
+    "fund_use_founder_desc": "锁定数量，表明团队的长期承诺。",
+    "fund_use_liquidity": "CEX / DEX 流动性 (15.0%)",
+    "fund_use_liquidity_desc": "分配给矿池以确保市场稳定性和足够的交易深度。",
+    "fund_use_community": "社区和奖金 (10.7%)",
+    "fund_use_community_desc": "用于空投 (Airdrops)、营销和早期采用者奖金。",
+    "fund_use_partnership": "战略合作 (5.0%)",
+    "fund_use_partnership_desc": "用于企业合作和生态系统扩展。"
+  },
+  "contract": {
+    "title": "智能合约透明度",
+    "description": "AIDAG 建立在经过审计的智能合约之上，创始人权限被永久撤销。在链上验证所有交易。",
+    "address_title": "AIDAG 合约地址 (兼容 EVM)",
+    "address_note": "*直接在任何区块浏览器上验证地址。"
+  },
+  "ai_mgmt": {
+    "title": "Soulware AI: 自治且无需信任的治理",
+    "card_production_title": "AI 生产与开发",
+    "card_production_desc": "Soulware AI 是链上生产和项目未来发展的唯一权威，确保真正的去中心化。",
+    "card_presale_title": "预售自动化",
+    "card_presale_desc": "通过 AI 的链上机制，从 DAO 财政库自动且无错误地分发代币。",
+    "card_social_title": "社交媒体管理",
+    "card_social_desc": "通过 Telegram、X 和 Instagram 进行动态、内容驱动和数据驱动的自动化发帖和管理。"
+  },
+  "new_sections": {
+    "title": "愿景与即时销售信息",
+    "vision_title": "AIDAG Spiral Chain 愿景",
+    "vision_desc": "我们的目标是建立一个高速、可扩展的第 1 层区块链，该区块链针对 AI 驱动的金融应用和自主 DAO 操作进行了优化。",
+    "vision_list_1": "AI 优化共识机制",
+    "vision_list_2": "无缝 DAO 互操作性",
+    "vision_list_3": "微交易的高吞吐量",
+    "sale_title": "即时预售和价格信息",
+    "sale_collected_usd": "总募集资金 (USD)",
+    "sale_progress_tokens": "已售代币 / 目标",
+    "sale_current_price": "当前价格",
+    "sale_stage": "预售阶段",
+    "sale_stage_value": "第 2 阶段 (最终)",
+    "sale_progress": "达成目标的进度",
+    "sale_target": "目标:",
+    "sale_cta": "立即参与预售"
+  },
+  "footer": {
+    "copyright": "© 2025 AIDAG Spiral. 版权所有. | 由 Soulware AI 管理."
+  }
+}

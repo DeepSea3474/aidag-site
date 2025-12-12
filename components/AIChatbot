@@ -1,0 +1,46 @@
+"use client";
+
+import { useState } from "react";
+
+export default function AIChatbot({ translations }) {
+  // İlk mesajı doğrudan initial state ile başlatıyoruz
+  const [messages, setMessages] = useState([
+    translations.welcome || "Welcome to AIChatbot"
+  ]);
+  const [input, setInput] = useState("");
+
+  function addMessage(message) {
+    setMessages((prev) => [...prev, message]);
+  }
+
+  function handleSend() {
+    if (input.trim() === "") return;
+    addMessage(input);
+    setInput("");
+  }
+
+  return (
+    <div className="p-4 border rounded">
+      <h2 className="text-lg font-bold mb-2">AIChatbot</h2>
+      <div className="mb-4">
+        {messages.map((msg, idx) => (
+          <div key={idx} className="mb-1">
+            {msg}
+          </div>
+        ))}
+      </div>
+      <input
+        type="text"
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
+        className="border p-2 mr-2"
+      />
+      <button
+        onClick={handleSend}
+        className="bg-blue-500 text-white px-4 py-2 rounded"
+      >
+        Send
+      </button>
+    </div>
+  );
+}

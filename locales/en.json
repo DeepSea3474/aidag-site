@@ -1,0 +1,79 @@
+{
+  "common": {
+    "connect": "Panel / Connect",
+    "visit_dao": "Visit DAO Platform",
+    "review_tokenomics": "Review Tokenomics",
+    "max_supply": "Max Supply:",
+    "address_copied": "Address Copied!"
+  },
+  "nav": {
+    "dao_platform": "DAO Platform",
+    "tokenomics": "Tokenomics",
+    "transparency": "Transparency",
+    "ai_mgmt": "Soulware AI"
+  },
+  "hero": {
+    "title": "Autonomous Financial Structure: AIDAG AI DAO",
+    "warning": "⚠️ NO FOUNDER AUTHORITY: All powers, including founder authority, have been permanently renounced via smart contract.",
+    "description": "AIDAG is a fully autonomous, transparent decentralized governance token, produced and maintained by Soulware AI."
+  },
+  "tokenomics": {
+    "title": "Tokenomics: Transparent & Stable Distribution",
+    "dao_wallet_title": "DAO Treasury Wallet Address",
+    "dao_wallet_desc": "Funds in this wallet can only be moved through successful DAO votes.",
+    "fund_use_dao": "DAO Treasury Wallet (30.0%)",
+    "fund_use_dao_desc": "Used for DAO decisions, grants, and ecosystem growth. Also manages presale token distribution. Address: ",
+    "fund_use_presale": "Pre-Sale & Public Offering (25.0%)",
+    "fund_use_presale_desc": "The main allocation for early investors. Distribution is handled automatically by Soulware AI from the DAO wallet.",
+    "fund_use_founder": "Founder Allocation (14.3% - 1 Year Locked)",
+    "fund_use_founder_desc": "Locked amount demonstrating long-term team commitment.",
+    "fund_use_liquidity": "CEX / DEX Liquidity (15.0%)",
+    "fund_use_liquidity_desc": "Allocated to pools to ensure market stability and sufficient trading depth.",
+    "fund_use_community": "Community & Bonuses (10.7%)",
+    "fund_use_community_desc": "For Airdrops, marketing, and early adopter bonuses.",
+    "fund_use_partnership": "Strategic Partnership (5.0%)",
+    "fund_use_partnership_desc": "For corporate partnerships and ecosystem expansion."
+  },
+  "contract": {
+    "title": "Smart Contract Transparency",
+    "description": "AIDAG is built on an audited smart contract with permanently renounced founder authority. Verify all transactions on-chain.",
+    "address_title": "AIDAG Contract Address (EVM Compatible)",
+    "address_note": "*Verify the address directly on any Block Explorer."
+  },
+  "ai_mgmt": {
+    "title": "Soulware AI: Autonomous, Trustless Governance",
+    "card_production_title": "AI Production & Development",
+    "card_production_desc": "Soulware AI is the sole authority for on-chain production and future development of the project, ensuring true decentralization.",
+    "card_presale_title": "Pre-Sale Automation",
+    "card_presale_desc": "Automated and error-free distribution of tokens from the DAO Treasury via the AI's on-chain mechanism.",
+    "card_social_title": "Social Media Management",
+    "card_social_desc": "Dynamic, content-driven, and data-based automated posting and management across Telegram, X, and Instagram."
+  },
+  "chatbot_messages": {
+    "welcome": "Welcome to AIDAG Soulware AI Assistant! Do you have a question about Tokenomics, Pre-Sale, or Smart Contract?",
+    "btn_tokenomics": "Tokenomics",
+    "btn_contract": "Smart Contract",
+    "btn_presale": "Pre-Sale",
+    "placeholder": "Type your question here..."
+  },
+  "new_sections": {
+    "title": "Vision & Instant Sale Info",
+    "vision_title": "AIDAG Spiral Chain Vision",
+    "vision_desc": "Our goal is to build a high-speed, scalable Layer 1 blockchain optimized for AI-driven financial applications and autonomous DAO operations.",
+    "vision_list_1": "AI-Optimized Consensus Mechanism",
+    "vision_list_2": "Seamless DAO Interoperability",
+    "vision_list_3": "High Throughput for Micro-transactions",
+    "sale_title": "Instant Pre-Sale & Price Info",
+    "sale_collected_usd": "Total Collected (USD)",
+    "sale_progress_tokens": "Tokens Sold / Target",
+    "sale_current_price": "Current Price",
+    "sale_stage": "Pre-Sale Stage",
+    "sale_stage_value": "Stage 2 (Final)",
+    "sale_progress": "Progress Towards Target",
+    "sale_target": "Target:",
+    "sale_cta": "Participate in Pre-Sale Now"
+  },
+  "footer": {
+    "copyright": "© 2025 AIDAG Spiral. All Rights Reserved. | Managed by Soulware AI."
+  }
+}

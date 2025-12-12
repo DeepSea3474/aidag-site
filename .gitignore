@@ -1,1 +1,25 @@
-storage/
+# Node.js dependencies
+node_modules/
+
+# Build output
+.next/
+out/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+.vercel
+.env*.local
+
+# Next.js build output
+.next/
+node_modules/
+
+# Node build artifacts
+keccak@3.0.4
+node-gyp-build
+
