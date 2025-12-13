@@ -1,13 +1,21 @@
 /** @type {import('next').NextConfig} */
+const isGithubActions = process.env.GITHUB_ACTIONS || false
+
+let assetPrefix = ''
+let basePath = '/'
+
+if (isGithubActions) {
+  // Bu, statik kaynakların doğru yola (aidag-site/) yerleştirilmesini sağlar.
+  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
+  assetPrefix = `/${repo}/`
+  basePath = `/${repo}`
+}
+
 const nextConfig = {
-  // NEXT.JS'e sadece statik HTML/CSS çıktısı almasını zorlar
-  output: 'export', 
-  // Tailwind CSS'in doğru çalışması için bu gereklidir
-  trailingSlash: true, 
+  output: 'export',
+  trailingSlash: true,
+  assetPrefix: assetPrefix,
+  basePath: basePath,
+}
 
-  // KRİTİK AYAR: Statik kaynaklar için göreceli yolları zorlar.
-  // Bu, Cloudflare Pages gibi statik hostlar için gereklidir.
-  assetPrefix: './', 
-};
-
-module.exports = nextConfig;
+module.exports = nextConfig
