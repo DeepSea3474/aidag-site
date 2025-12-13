@@ -1,21 +1,13 @@
 /** @type {import('next').NextConfig} */
-const isGithubActions = process.env.GITHUB_ACTIONS || false
-
-let assetPrefix = ''
-let basePath = '/'
-
-if (isGithubActions) {
-  // Bu, statik kaynakların doğru yola (aidag-site/) yerleştirilmesini sağlar.
-  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
-  assetPrefix = `/${repo}/`
-  basePath = `/${repo}`
-}
-
 const nextConfig = {
+  // Çıktı klasörünü 'out' olarak ayarlamak için zorunlu (Cloudflare'a uyumlu).
   output: 'export',
+  // Tailwind CSS için gereklidir.
   trailingSlash: true,
-  assetPrefix: assetPrefix,
-  basePath: basePath,
-}
 
-module.exports = nextConfig
+  // KRİTİK AYAR: Statik dosyaların yollarını göreceli yapar.
+  assetPrefix: './',
+};
+
+module.exports = nextConfig;
+
