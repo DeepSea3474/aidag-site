@@ -3,9 +3,11 @@ const nextConfig = {
   // NEXT.JS'e sadece statik HTML/CSS çıktısı almasını zorlar
   output: 'export', 
   // Tailwind CSS'in doğru çalışması için bu gereklidir
-  trailingSlash: true,
+  trailingSlash: true, 
+
+  // KRİTİK AYAR: Statik kaynaklar için göreceli yolları zorlar.
+  // Bu, Cloudflare Pages gibi statik hostlar için gereklidir.
+  assetPrefix: './', 
 };
 
 module.exports = nextConfig;
-
-// Git'in farkı görmesi için eklenen yorum (Örnek)
