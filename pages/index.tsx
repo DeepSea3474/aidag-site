@@ -10,10 +10,7 @@ export default function Home() {
         </nav>
       </header>
       <main>
-        <h1>Aidag Site</h1>
-        <p>Hoş geldiniz! Bu sayfa Next.js ile oluşturuldu.</p>
-        <button onClick={() => alert("Butona tıkladınız!")}>Buton Örneği</button>
-      </main><main>
+               
   <div className="announcement">
     <h1>🚀 Aidag Website Coming Soon</h1>
     <p>We are preparing to launch the Aidag platform. Stay tuned for the official release and presale announcement in early 2026!</p>
