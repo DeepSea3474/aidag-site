@@ -1,5 +1,5 @@
 {
-  "name": "aidag-site",
+  "name": "aidag-site-clean",
   "compatibility_date": "2025-12-22",
   "assets": {
     "directory": "./out"
