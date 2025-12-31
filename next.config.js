@@ -1,11 +1,20 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
-  reactStrictMode: true,
-  images: {
-    unoptimized: true,
+{
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-};
-
-module.exports = nextConfig;
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "@types/react": "^19.2.7",
+    "typescript": "^5.9.3"
+  }
+}
 
