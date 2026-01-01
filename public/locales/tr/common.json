@@ -1,0 +1,17 @@
+{
+  "title": "Aidag DAO",
+  "home": "Ana Sayfa",
+  "presale": "Ön Satış",
+  "dao": "DAO Yönetimi",
+  "docs": "Dokümantasyon",
+  "treasuryBalance": "DAO Hazinesi Bakiyesi",
+  "buyToken": "Token Satın Al",
+  "contractAddresses": "Kontrat Adresleri",
+  "tokenomicsRules": "Tokenomics Kuralları",
+  "transparency": "Şeffaflık",
+  "tokenomicsText": "Toplam 17,999,000 Aidag token SoulwareAI + DAO cüzdanında tutulmaktadır. Bu tokenler otonom şekilde ön satış, bonus, likidite ve stake işlemlerinde kullanılmaktadır.",
+  "rule40": "Ön satış gelirlerinin %40’ı likidite havuzuna aktarılır.",
+  "rule60": "Ön satış gelirlerinin %60’ı kurucu cüzdana aktarılır.",
+  "transparencyText": "Tüm kurallar akıllı kontratlarda doğrulanmış ve block explorer üzerinde görülebilir. DAO üyeleri kontrat adreslerini kontrol ederek sistemin otonom çalıştığını teyit edebilir."
+}
+

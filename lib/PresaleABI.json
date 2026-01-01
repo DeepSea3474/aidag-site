@@ -1,0 +1,9 @@
+[
+  {
+    "inputs":[{"internalType":"uint256","name":"amount","type":"uint256"}],
+    "name":"buyTokens",
+    "outputs":[],
+    "stateMutability":"payable",
+    "type":"function"
+  }
+]
