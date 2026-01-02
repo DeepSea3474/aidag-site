@@ -1,0 +1,2 @@
+export NEXT_DISABLE_NATIVE_SWC=1
+
