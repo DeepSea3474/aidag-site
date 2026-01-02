@@ -1,0 +1,176 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@11.6.2
+2 info using node@v24.12.0
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/.npmrc
+5 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+6 verbose title npm install @next/swc-wasm-nodejs
+7 verbose argv "install" "@next/swc-wasm-nodejs"
+8 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2026-01-01T15_07_44_604Z-
+9 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2026-01-01T15_07_44_604Z-debug-0.log
+10 silly logfile start cleaning logs, removing 1 files
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:1174405120 maxSize:293601280 maxEntrySize:146800640
+13 silly idealTree buildDeps
+14 silly fetch manifest @next/swc-wasm-nodejs@*
+15 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-wasm-nodejs cache-miss
+16 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules/next
+17 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-wasm-nodejs 2020ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-wasm-nodejs set size:undefined disposed:false
+19 silly placeDep ROOT @next/swc-wasm-nodejs@16.1.1 OK for: aidag@1.0.0 want: *
+20 silly reify moves {}
+21 silly audit bulk request {
+21 silly audit   '@alloc/quick-lru': [ '5.2.0' ],
+21 silly audit   '@jridgewell/gen-mapping': [ '0.3.13' ],
+21 silly audit   '@jridgewell/remapping': [ '2.3.5' ],
+21 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+21 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.5' ],
+21 silly audit   '@jridgewell/trace-mapping': [ '0.3.31' ],
+21 silly audit   '@next/env': [ '14.2.35' ],
+21 silly audit   '@next/swc-darwin-arm64': [ '14.2.33' ],
+21 silly audit   '@next/swc-darwin-x64': [ '14.2.33' ],
+21 silly audit   '@next/swc-linux-arm64-gnu': [ '14.2.33' ],
+21 silly audit   '@next/swc-linux-arm64-musl': [ '14.2.33' ],
+21 silly audit   '@next/swc-linux-x64-gnu': [ '14.2.33' ],
+21 silly audit   '@next/swc-linux-x64-musl': [ '14.2.33' ],
+21 silly audit   '@next/swc-win32-arm64-msvc': [ '14.2.33' ],
+21 silly audit   '@next/swc-win32-ia32-msvc': [ '14.2.33' ],
+21 silly audit   '@next/swc-win32-x64-msvc': [ '14.2.33' ],
+21 silly audit   '@nodelib/fs.scandir': [ '2.1.5' ],
+21 silly audit   '@nodelib/fs.stat': [ '2.0.5' ],
+21 silly audit   '@nodelib/fs.walk': [ '1.2.8' ],
+21 silly audit   '@swc/counter': [ '0.1.3' ],
+21 silly audit   '@swc/helpers': [ '0.5.5' ],
+21 silly audit   '@tailwindcss/node': [ '4.1.18' ],
+21 silly audit   tailwindcss: [ '4.1.18', '3.4.19' ],
+21 silly audit   '@tailwindcss/oxide': [ '4.1.18' ],
+21 silly audit   '@tailwindcss/oxide-android-arm64': [ '4.1.18' ],
+21 silly audit   '@tailwindcss/oxide-darwin-arm64': [ '4.1.18' ],
+21 silly audit   '@tailwindcss/oxide-darwin-x64': [ '4.1.18' ],
+21 silly audit   '@tailwindcss/oxide-freebsd-x64': [ '4.1.18' ],
+21 silly audit   '@tailwindcss/oxide-linux-arm-gnueabihf': [ '4.1.18' ],
+21 silly audit   '@tailwindcss/oxide-linux-arm64-gnu': [ '4.1.18' ],
+21 silly audit   '@tailwindcss/oxide-linux-arm64-musl': [ '4.1.18' ],
+21 silly audit   '@tailwindcss/oxide-linux-x64-gnu': [ '4.1.18' ],
+21 silly audit   '@tailwindcss/oxide-linux-x64-musl': [ '4.1.18' ],
+21 silly audit   '@tailwindcss/oxide-wasm32-wasi': [ '4.1.18' ],
+21 silly audit   '@tailwindcss/oxide-win32-arm64-msvc': [ '4.1.18' ],
+21 silly audit   '@tailwindcss/oxide-win32-x64-msvc': [ '4.1.18' ],
+21 silly audit   '@tailwindcss/postcss': [ '4.1.18' ],
+21 silly audit   '@types/node': [ '25.0.3' ],
+21 silly audit   '@types/react': [ '19.2.7' ],
+21 silly audit   'any-promise': [ '1.3.0' ],
+21 silly audit   anymatch: [ '3.1.3' ],
+21 silly audit   arg: [ '5.0.2' ],
+21 silly audit   autoprefixer: [ '10.4.23' ],
+21 silly audit   'baseline-browser-mapping': [ '2.9.11' ],
+21 silly audit   'binary-extensions': [ '2.3.0' ],
+21 silly audit   braces: [ '3.0.3' ],
+21 silly audit   browserslist: [ '4.28.1' ],
+21 silly audit   busboy: [ '1.6.0' ],
+21 silly audit   'camelcase-css': [ '2.0.1' ],
+21 silly audit   'caniuse-lite': [ '1.0.30001762' ],
+21 silly audit   chokidar: [ '3.6.0' ],
+21 silly audit   'glob-parent': [ '5.1.2', '6.0.2' ],
+21 silly audit   'client-only': [ '0.0.1' ],
+21 silly audit   commander: [ '4.1.1' ],
+21 silly audit   cssesc: [ '3.0.0' ],
+21 silly audit   csstype: [ '3.2.3' ],
+21 silly audit   'detect-libc': [ '2.1.2' ],
+21 silly audit   didyoumean: [ '1.2.2' ],
+21 silly audit   dlv: [ '1.1.3' ],
+21 silly audit   'electron-to-chromium': [ '1.5.267' ],
+21 silly audit   'enhanced-resolve': [ '5.18.4' ],
+21 silly audit   escalade: [ '3.2.0' ],
+21 silly audit   'fast-glob': [ '3.3.3' ],
+21 silly audit   fastq: [ '1.20.1' ],
+21 silly audit   'fill-range': [ '7.1.1' ],
+21 silly audit   'fraction.js': [ '5.3.4' ],
+21 silly audit   fsevents: [ '2.3.3' ],
+21 silly audit   'function-bind': [ '1.1.2' ],
+21 silly audit   'graceful-fs': [ '4.2.11' ],
+21 silly audit   hasown: [ '2.0.2' ],
+21 silly audit   'is-binary-path': [ '2.1.0' ],
+21 silly audit   'is-core-module': [ '2.16.1' ],
+21 silly audit   'is-extglob': [ '2.1.1' ],
+21 silly audit   'is-glob': [ '4.0.3' ],
+21 silly audit   'is-number': [ '7.0.0' ],
+21 silly audit   jiti: [ '2.6.1', '1.21.7' ],
+21 silly audit   'js-tokens': [ '4.0.0' ],
+21 silly audit   lightningcss: [ '1.30.2' ],
+21 silly audit   'lightningcss-android-arm64': [ '1.30.2' ],
+21 silly audit   'lightningcss-darwin-arm64': [ '1.30.2' ],
+21 silly audit   'lightningcss-darwin-x64': [ '1.30.2' ],
+21 silly audit   'lightningcss-freebsd-x64': [ '1.30.2' ],
+21 silly audit   'lightningcss-linux-arm-gnueabihf': [ '1.30.2' ],
+21 silly audit   'lightningcss-linux-arm64-gnu': [ '1.30.2' ],
+21 silly audit   'lightningcss-linux-arm64-musl': [ '1.30.2' ],
+21 silly audit   'lightningcss-linux-x64-gnu': [ '1.30.2' ],
+21 silly audit   'lightningcss-linux-x64-musl': [ '1.30.2' ],
+21 silly audit   'lightningcss-win32-arm64-msvc': [ '1.30.2' ],
+21 silly audit   'lightningcss-win32-x64-msvc': [ '1.30.2' ],
+21 silly audit   lilconfig: [ '3.1.3' ],
+21 silly audit   'lines-and-columns': [ '1.2.4' ],
+21 silly audit   'loose-envify': [ '1.4.0' ],
+21 silly audit   'magic-string': [ '0.30.21' ],
+21 silly audit   merge2: [ '1.4.1' ],
+21 silly audit   micromatch: [ '4.0.8' ],
+21 silly audit   mz: [ '2.7.0' ],
+21 silly audit   nanoid: [ '3.3.11' ],
+21 silly audit   next: [ '14.2.35' ],
+21 silly audit   postcss: [ '8.4.31', '8.5.6' ],
+21 silly audit   'node-releases': [ '2.0.27' ],
+21 silly audit   'normalize-path': [ '3.0.0' ],
+21 silly audit   'object-assign': [ '4.1.1' ],
+21 silly audit   'object-hash': [ '3.0.0' ],
+21 silly audit   'path-parse': [ '1.0.7' ],
+21 silly audit   picocolors: [ '1.1.1' ],
+21 silly audit   picomatch: [ '2.3.1', '4.0.3' ],
+21 silly audit   pify: [ '2.3.0' ],
+21 silly audit   pirates: [ '4.0.7' ],
+21 silly audit   'postcss-import': [ '15.1.0' ],
+21 silly audit   'postcss-js': [ '4.1.0' ],
+21 silly audit   'postcss-load-config': [ '6.0.1' ],
+21 silly audit   'postcss-nested': [ '6.2.0' ],
+21 silly audit   'postcss-selector-parser': [ '6.1.2' ],
+21 silly audit   'postcss-value-parser': [ '4.2.0' ],
+21 silly audit   'queue-microtask': [ '1.2.3' ],
+21 silly audit   react: [ '18.3.1' ],
+21 silly audit   'react-dom': [ '18.3.1' ],
+21 silly audit   'read-cache': [ '1.0.0' ],
+21 silly audit   readdirp: [ '3.6.0' ],
+21 silly audit   resolve: [ '1.22.11' ],
+21 silly audit   reusify: [ '1.1.0' ],
+21 silly audit   'run-parallel': [ '1.2.0' ],
+21 silly audit   scheduler: [ '0.23.2' ],
+21 silly audit   'source-map-js': [ '1.2.1' ],
+21 silly audit   streamsearch: [ '1.1.0' ],
+21 silly audit   'styled-jsx': [ '5.1.1' ],
+21 silly audit   sucrase: [ '3.35.1' ],
+21 silly audit   'supports-preserve-symlinks-flag': [ '1.0.0' ],
+21 silly audit   tapable: [ '2.3.0' ],
+21 silly audit   thenify: [ '3.3.1' ],
+21 silly audit   'thenify-all': [ '1.6.0' ],
+21 silly audit   tinyglobby: [ '0.2.15' ],
+21 silly audit   fdir: [ '6.5.0' ],
+21 silly audit   'to-regex-range': [ '5.0.1' ],
+21 silly audit   'ts-interface-checker': [ '0.1.13' ],
+21 silly audit   tslib: [ '2.8.1' ],
+21 silly audit   typescript: [ '5.9.3' ],
+21 silly audit   'undici-types': [ '7.16.0' ],
+21 silly audit   'update-browserslist-db': [ '1.2.3' ],
+21 silly audit   'util-deprecate': [ '1.0.2' ],
+21 silly audit   '@next/swc-wasm-nodejs': [ '16.1.1' ]
+21 silly audit }
+22 http cache @next/swc-wasm-nodejs@https://registry.npmjs.org/@next/swc-wasm-nodejs/-/swc-wasm-nodejs-16.1.1.tgz 1ms (cache hit)
+23 silly tarball no local data for @next/swc-wasm-nodejs@https://registry.npmjs.org/@next/swc-wasm-nodejs/-/swc-wasm-nodejs-16.1.1.tgz. Extracting by manifest.
+24 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 381ms
+25 silly audit report {}
+26 http fetch GET 200 https://registry.npmjs.org/@next/swc-wasm-nodejs/-/swc-wasm-nodejs-16.1.1.tgz 7408ms (cache miss)
+27 silly ADD node_modules/@next/swc-wasm-nodejs
+28 verbose cwd /data/data/com.termux/files/home
+29 verbose os Linux 6.6.30-android15-8-g6b55ce738535-4k
+30 verbose node v24.12.0
+31 verbose npm  v11.6.2
+32 verbose exit 0
+33 info ok
