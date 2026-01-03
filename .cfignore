@@ -3,3 +3,9 @@
 .next/static/chunks/*.map
 .next/static/chunks/*.pack
 webpack/client-production/*.pack
+node_modules
+.npm
+.cache
+.npm-cache
+aidag-hardhat/foundry/target
+
