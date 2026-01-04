@@ -1,5 +1,10 @@
 .btn-primary {
-  @apply px-6 py-3 rounded-lg font-semibold;
+  padding-left: 1.5rem;   /* px-6 */
+  padding-right: 1.5rem;  /* px-6 */
+  padding-top: 0.75rem;   /* py-3 */
+  padding-bottom: 0.75rem;/* py-3 */
+  border-radius: 0.5rem;  /* rounded-lg */
+  font-weight: 600;       /* font-semibold */
   background-image: linear-gradient(90deg, #00d9ff, #0066ff);
   box-shadow: 0 0 16px rgba(0,255,255,.35), inset 0 0 8px rgba(0,255,255,.25);
 }
@@ -10,8 +15,9 @@
 }
 
 .card {
-  @apply rounded-xl p-6 border;
-  border-color: rgba(0,255,255,.25);
+  border-radius: 0.75rem; /* rounded-xl */
+  padding: 1.5rem;        /* p-6 */
+  border: 1px solid rgba(0,255,255,.25);
   background: rgba(10,10,10,.6);
   backdrop-filter: blur(8px);
 }
