@@ -1,0 +1,18 @@
+.btn-primary {
+  @apply px-6 py-3 rounded-lg font-semibold;
+  background-image: linear-gradient(90deg, #00d9ff, #0066ff);
+  box-shadow: 0 0 16px rgba(0,255,255,.35), inset 0 0 8px rgba(0,255,255,.25);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 0 24px rgba(0,255,255,.55), inset 0 0 12px rgba(0,255,255,.35);
+}
+
+.card {
+  @apply rounded-xl p-6 border;
+  border-color: rgba(0,255,255,.25);
+  background: rgba(10,10,10,.6);
+  backdrop-filter: blur(8px);
+}
+
