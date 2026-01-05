@@ -1,10 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/dao": "pages/dao.html",
-  "/_error": "pages/_error.js",
-  "/presale": "pages/presale.html",
-  "/_document": "pages/_document.js",
-  "/docs": "pages/docs.html",
-  "/": "pages/index.html",
-  "/404": "pages/404.html"
-}
+{}

@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import useTranslation from "../lib/useTranslation";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -19,4 +19,3 @@ export default function Home() {
     </Layout>
   );
 }
-
