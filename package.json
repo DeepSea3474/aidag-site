@@ -9,9 +9,11 @@
   },
   "dependencies": {
     "ethers": "^6.16.0",
+    "i18next": "^25.7.3",
     "next": "^14.0.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-i18next": "^16.5.1"
   },
   "devDependencies": {
     "@babel/core": "^7.28.5",
