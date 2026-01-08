@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Contract } from "ethers";
 import PresaleABI from "../abi/Presale.json";       // Presale ABI dosyan
-import { provider } from "../lib/provider";         // Provider tanımın (Infura/Alchemy veya kendi RPC)
+import { provider } from "../lib/provider";         // Provider tanımın
 import Layout from "../components/Layout";
 import WalletButton from "../components/WalletButton";
 import { TREASURY_ADDRESS } from "../lib/config";
@@ -20,4 +20,26 @@ const presaleContract = new Contract(presaleAddress, PresaleABI, provider);
 export default function Presale() {
   const { t } = useTranslation();
   const [treasuryBal, setTreasuryBal] = useState("");
+  const [userAddr, setUserAddr] = useState(null);
+
+  async function loadTreasuryBalance() {
+    const bal = await getBalance(TREASURY_ADDRESS);
+    setTreasuryBal(bal);
+  }
+
+  useEffect(() => {
+    loadTreasuryBalance();
+  }, []);
+
+  return (
+    <Layout>
+      <h1 className="text-2xl font-bold">{t("presaleTitle")}</h1>
+      <p><b>{t("treasuryBalance")}:</b> {treasuryBal}</p>
+      <WalletButton onConnected={setUserAddr} />
+      <button disabled={!userAddr} className="mt-6">
+        {t("buyToken")}
+      </button>
+    </Layout>
+  );
+}
 
