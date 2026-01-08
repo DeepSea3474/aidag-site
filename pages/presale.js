@@ -1,45 +1,40 @@
-import { useState, useEffect } from "react";
-import { Contract } from "ethers";
-import PresaleABI from "../abi/Presale.json";       // Presale ABI dosyan
-import { provider } from "../lib/provider";         // Provider tanımın
-import Layout from "../components/Layout";
-import WalletButton from "../components/WalletButton";
-import { TREASURY_ADDRESS } from "../lib/config";
-import { getBalance } from "../lib/aidag";
-import useTranslation from "../lib/useTranslation";
+import { ethers } from "ethers";
+import PresaleABI from "../abi/Presale.json";
+import { provider } from "../lib/provider";
 
-// ✅ Env guard
 const presaleAddress = process.env.NEXT_PUBLIC_PRESALE_CONTRACT;
-if (!presaleAddress) {
-  throw new Error("❌ NEXT_PUBLIC_PRESALE_CONTRACT not defined in environment variables");
+
+if (!presaleAddress || presaleAddress.length !== 42) {
+  throw new Error("Presale contract address is missing or invalid");
 }
 
-// ✅ Contract init
-const presaleContract = new Contract(presaleAddress, PresaleABI, provider);
+const presaleContract = new ethers.Contract(
+  presaleAddress,
+  PresaleABI,
+  provider
+);
 
-export default function Presale() {
-  const { t } = useTranslation();
-  const [treasuryBal, setTreasuryBal] = useState("");
-  const [userAddr, setUserAddr] = useState(null);
+const daoWallet = process.env.NEXT_PUBLIC_DAO_WALLET;
+const founderWallet = process.env.NEXT_PUBLIC_FOUNDER_WALLET;
+const tokenContract = process.env.NEXT_PUBLIC_TOKEN_CONTRACT;
+const operationWallet = process.env.NEXT_PUBLIC_OPERATION_WALLET;
 
-  async function loadTreasuryBalance() {
-    const bal = await getBalance(TREASURY_ADDRESS);
-    setTreasuryBal(bal);
-  }
+const presaleStage1 = parseFloat(process.env.NEXT_PUBLIC_PRESALE_STAGE1);
+const presaleStage2 = parseFloat(process.env.NEXT_PUBLIC_PRESALE_STAGE2);
+const listingPrice = parseFloat(process.env.NEXT_PUBLIC_LISTING_PRICE);
+const tokenSupply = parseInt(process.env.NEXT_PUBLIC_TOKEN_SUPPLY, 10);
+const presaleTarget = parseInt(process.env.NEXT_PUBLIC_PRESALE_TARGET, 10);
 
-  useEffect(() => {
-    loadTreasuryBalance();
-  }, []);
-
-  return (
-    <Layout>
-      <h1 className="text-2xl font-bold">{t("presaleTitle")}</h1>
-      <p><b>{t("treasuryBalance")}:</b> {treasuryBal}</p>
-      <WalletButton onConnected={setUserAddr} />
-      <button disabled={!userAddr} className="mt-6">
-        {t("buyToken")}
-      </button>
-    </Layout>
-  );
-}
+export {
+  presaleContract,
+  daoWallet,
+  founderWallet,
+  tokenContract,
+  operationWallet,
+  presaleStage1,
+  presaleStage2,
+  listingPrice,
+  tokenSupply,
+  presaleTarget
+};
 
