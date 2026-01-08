@@ -42,7 +42,4 @@ export default function Presale() {
     </Layout>
   );
 }
-</Layout>
-  );
-}   // ✅ Bu fonksiyonun kapanış parantezi
 
