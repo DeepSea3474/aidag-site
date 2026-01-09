@@ -16,25 +16,20 @@ const presaleContract = new ethers.Contract(
 
 const daoWallet = process.env.NEXT_PUBLIC_DAO_WALLET;
 const founderWallet = process.env.NEXT_PUBLIC_FOUNDER_WALLET;
-const tokenContract = process.env.NEXT_PUBLIC_TOKEN_CONTRACT;
 const operationWallet = process.env.NEXT_PUBLIC_OPERATION_WALLET;
+const tokenContract = process.env.NEXT_PUBLIC_TOKEN_CONTRACT;
 
-const presaleStage1 = parseFloat(process.env.NEXT_PUBLIC_PRESALE_STAGE1);
-const presaleStage2 = parseFloat(process.env.NEXT_PUBLIC_PRESALE_STAGE2);
-const listingPrice = parseFloat(process.env.NEXT_PUBLIC_LISTING_PRICE);
-const tokenSupply = parseInt(process.env.NEXT_PUBLIC_TOKEN_SUPPLY, 10);
-const presaleTarget = parseInt(process.env.NEXT_PUBLIC_PRESALE_TARGET, 10);
-
-export {
-  presaleContract,
-  daoWallet,
-  founderWallet,
-  tokenContract,
-  operationWallet,
-  presaleStage1,
-  presaleStage2,
-  listingPrice,
-  tokenSupply,
-  presaleTarget
-};
+// ✅ Default export edilen React component
+export default function Presale() {
+  return (
+    <div style={{ padding: "2rem" }}>
+      <h1>Presale Dashboard</h1>
+      <p><strong>DAO Wallet:</strong> {daoWallet}</p>
+      <p><strong>Founder Wallet:</strong> {founderWallet}</p>
+      <p><strong>Operation Wallet:</strong> {operationWallet}</p>
+      <p><strong>Token Contract:</strong> {tokenContract}</p>
+      <p><strong>Presale Contract:</strong> {presaleAddress}</p>
+    </div>
+  );
+}
 
