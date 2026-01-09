@@ -12,9 +12,15 @@ export default function Home() {
         Presale, liquidity, staking and bonus operations.
       </p>
       <div className="mt-6 space-x-4">
-        <a href="/presale" className="text-blue-600 underline">Presale</a>
-        <a href="/dao" className="text-blue-600 underline">DAO</a>
-        <a href="/docs" className="text-blue-600 underline">Docs</a>
+        <a href="/presale" className="text-blue-600 underline">
+          Presale
+        </a>
+        <a href="/dao" className="text-blue-600 underline">
+          DAO
+        </a>
+        <a href="/docs" className="text-blue-600 underline">
+          Docs
+        </a>
       </div>
     </Layout>
   );
